@@ -1,0 +1,141 @@
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding-top:50px;  /* espacio para el nav */
+}
+
+/* NAV */
+nav{
+    background:#222;
+    padding:15px;
+    display:flex;
+    justify-content:center; /*dice si va centrado a la derecha o a la izquierda*/
+    gap:30px; /*espacio entre los elementos flex*/
+
+    position:fixed;   /* lo fija */
+    top:0;
+    left:0;
+    width:100%;       /* ocupa todo el ancho */
+    z-index:1000;     /* queda por encima del contenido */
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:#f4f4f4;
+}
+
+header img{
+    width:150px;
+    border-radius:50%;
+    margin:20px 0;
+}
+
+/* CONTENIDO */
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* SECCIONES */
+section{
+    margin:40px 0;
+    scroll-margin-top:150px;
+}
+
+/* LISTAS */
+ul{
+    padding-left:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+
+    width:100%;
+    margin-top:40px;
+}
+
+footer img{
+    height:65px;
+    width:auto;
+    margin:0px;
+    padding: auto;
+}
+.linkeding{
+    height: 100px;
+    margin: 0px;
+    padding: auto;
+}
+#redes{
+    display:flex;
+    justify-content:center;
+    align-items:center;  
+    gap:20px;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:400px;
+    margin:auto;
+}
+
+input, textarea{
+    padding:8px;
+}
+
+/* 🔴 RESPONSIVE */
+@media (max-width:768px){
+
+    /* NAV compacto */
+    nav{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        padding:10px;
+    }
+
+    nav a{
+        font-size:14px;
+        padding:5px;
+    }
+
+    /* Reducir espacio del body (nav más chico) */
+    body{
+        padding-top:150px;
+    }
+
+    /* Imagen perfil más chica */
+    header img{
+        width:110px;
+    }
+
+    /* Texto más cómodo en mobile */
+    main{
+        padding:15px;
+    }
+
+    section{
+        scroll-margin-top:170px;
+    }
+}
