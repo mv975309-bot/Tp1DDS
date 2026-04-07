@@ -50,17 +50,14 @@ header img{
 main{
     max-width:1000px;
     margin:auto;
-    padding:20px;
+    padding:60px 10%;
+    min-height: calc(100vh - 70px);
 }
 
 /* SECCIONES */
 section{
     margin:40px 0;
     scroll-margin-top:150px;
-}
-section {
-    min-height: calc(100vh - 70px);
-    padding: 60px 10%;
 }
 /* LISTAS */
 ul{
