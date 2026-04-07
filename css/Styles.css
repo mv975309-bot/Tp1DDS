@@ -5,7 +5,9 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     padding-top:50px;  /* espacio para el nav */
 }
@@ -56,7 +58,10 @@ section{
     margin:40px 0;
     scroll-margin-top:150px;
 }
-
+section {
+    min-height: calc(100vh - 70px);
+    padding: 60px 10%;
+}
 /* LISTAS */
 ul{
     padding-left:20px;
