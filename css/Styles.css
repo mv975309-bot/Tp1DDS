@@ -1,3 +1,15 @@
+:root{
+    --bg: #ffffff;
+    --text: #222;
+    --nav: #222;
+    --card: #f4f4f4;
+}
+.dark{
+    --bg: #121212;
+    --text: #f5f5f5;
+    --nav: #1e1e1e;
+    --card: #7d7d7d;
+}
 /* Reset básico */
 *{
     margin:0;
@@ -10,11 +22,13 @@ html {
 }
 body{
     padding-top:50px;  /* espacio para el nav */
+    background: var(--bg);
+    color: var(--text);
 }
 
 /* NAV */
 nav{
-    background:#222;
+    background:var(--nav);
     padding:15px;
     display:flex;
     justify-content:center; /*dice si va centrado a la derecha o a la izquierda*/
@@ -38,7 +52,7 @@ header{
     text-align:center;
     width:100%;
     padding:80px 10%;
-    background:#f4f4f4;
+    background:var(--card);
 }
 /* CONTENIDO */
 main{
@@ -57,7 +71,7 @@ main{
 /* SECCIONES */
 section{
     margin:40px 0;
-    scroll-margin-top:120px;
+    scroll-margin-top:150px;
 }
 /* LISTAS */
 ul{
@@ -68,7 +82,7 @@ ul{
 
 /* FOOTER */
 footer{
-    background:#222;
+    background:var(--nav);
     color:white;
     text-align:center;
     padding:30px;
@@ -115,7 +129,7 @@ form{
     height: 120px;
     object-fit: contain;
     padding: 15px;
-    background: #f5f5f5;
+    background: var(--card);
     border-radius: 12px;
     transition: 0.3s;
 }
@@ -126,7 +140,15 @@ p{
     margin: 10px;
     padding: 20px;
     border-radius: 30px;
-    background-color:#f4f4f4;
+    background-color:var(--card);
+}
+#darkBtn{
+    margin-left: auto;
+    background: none;   /* sin fondo */
+    border: none;       /* sin borde */
+    font-size: 20px;
+    cursor: pointer;
+    color: white;       /* mismo color que el nav */
 }
 
 /* 🔴 RESPONSIVE */
@@ -155,6 +177,6 @@ p{
         width:110px;
     }
     section{
-        scroll-margin-top:230px;
+        scroll-margin-top:250px;
     }
 }
