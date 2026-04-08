@@ -105,6 +105,22 @@ form{
 input, textarea{
     padding:8px;
 }
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.logos img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    transition: 0.3s;
+}
 
 /* 🔴 RESPONSIVE */
 @media (max-width:768px){
